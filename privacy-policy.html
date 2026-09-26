@@ -37,22 +37,31 @@
 
   <div class="summary">
     Short version: Trig has no account and no server of its own. What it reads from Apple Health
-    and your calendar is used on your iPhone, and Trig never sends it anywhere. Trig sends out only
-    two things: your location, to Apple's own weather service, and — only when you search for a
-    race — the race name you type, to RunSignup.
+    and your calendar is used on your iPhone, and Trig never sends it anywhere. Only three things go
+    out, each to fetch something you asked to see: your location, to Apple's own weather service;
+    the area around a run whose map you open, to Apple Maps, which sends back the map; and — only
+    when you search for a race — the race name you type, to RunSignup.
   </div>
 
   <h2>Apple Health (read-only)</h2>
   <p>With your permission, Trig reads:</p>
   <ul>
-    <li>your runs, including the heart rate and calories from each one;</li>
+    <li>your runs, including the heart rate, calories and route of each one;</li>
     <li>your sleep, resting heart rate and heart rate variability;</li>
     <li>today's step count;</li>
     <li>your height, weight, biological sex and date of birth.</li>
   </ul>
   <p>
-    It uses these so your plan starts from what you have actually been running, to show how today
-    compares with your own normal, and to fill in your profile so you do not have to type it in.
+    It uses these so your plan starts from what you have actually been running, to show each run's
+    splits and its route on a map, to show how today compares with your own normal, and to fill in
+    your profile so you do not have to type it in.
+  </p>
+  <p>
+    A run's route is read from Health when you open that run, drawn on your iPhone, and not kept by
+    Trig. Trig never sends the route anywhere. To draw the map underneath it, your iPhone asks Apple
+    Maps for the map of that area, as any app showing a map does; Apple handles that request under
+    <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's privacy
+    policy</a>.
   </p>
   <p>
     Health data is read on your iPhone and used on your iPhone. Some of it is kept in Trig's own
@@ -102,8 +111,10 @@
   <p>
     Your training plan, your run log, your profile, calendar notes and your settings are all stored
     in Trig's own storage on your iPhone, along with a few automatic copies of your plan kept so a
-    damaged file can be recovered. Trig does not use iCloud. Like any app's data, it is included in
-    your iPhone's own backups if you have those turned on. Deleting Trig deletes all of it.
+    damaged file can be recovered. If you set up Strength, your answers to its questions — including
+    any pain, injury or surgery you tell it about — and the lifts you log are kept there too, and
+    nowhere else. Trig does not use iCloud. Like any app's data, it is included in your iPhone's own
+    backups if you have those turned on. Deleting Trig deletes all of it.
   </p>
   <p>
     If you choose to export your training or save a copy of it, the file goes only where you send
